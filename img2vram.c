@@ -60,14 +60,14 @@ int main(int argc, char *argv[]) {
                     if(dist_down[j] < dist_down[min_down])
                         min_down = j;
                 }
-                printf("Closest to (%d, %d, %d) is (%d, %d, %d) (%d)\n", pixel_up[0], pixel_up[1], pixel_up[2], palette_rgb[min_up][0], palette_rgb[min_up][1], palette_rgb[min_up][2], min_up);
-                printf("Closest to (%d, %d, %d) is (%d, %d, %d) (%d)\n", pixel_down[0], pixel_down[1], pixel_down[2], palette_rgb[min_down][0], palette_rgb[min_down][1], palette_rgb[min_down][2], min_down);
+                //printf("Closest to (%d, %d, %d) is (%d, %d, %d) (%d)\n", pixel_up[0], pixel_up[1], pixel_up[2], palette_rgb[min_up][0], palette_rgb[min_up][1], palette_rgb[min_up][2], min_up);
+                //printf("Closest to (%d, %d, %d) is (%d, %d, %d) (%d)\n", pixel_down[0], pixel_down[1], pixel_down[2], palette_rgb[min_down][0], palette_rgb[min_down][1], palette_rgb[min_down][2], min_down);
 
-                /* if((y*32+x) % 8 == 0) {
+                if((y*32+x) % 8 == 0) {
                     printf("%s\n\t0x%hx", y == 0 && x == 0 && i == 0 ? "" : ",", (min_up << 12) | min_down << 8);
                 } else {
                     printf(", 0x%hx", (min_up << 12) | min_down << 8);
-                } */
+                }
             }
         }
 
